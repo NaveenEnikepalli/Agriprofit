@@ -69,21 +69,21 @@ final GoRouter _router = GoRouter(
     GoRoute(
       path: '/',
       pageBuilder: (context, state) => _buildPageWithTransition(
-        child: const AppScaffold(child: HomeScreen(), bgImageIndex: 0),
+        child: const AppScaffold(bgImageIndex: 0, child: HomeScreen()),
       ),
     ),
     GoRoute(
       path: '/mandi-prices',
       pageBuilder: (context, state) => _buildPageWithTransition(
-        child: const AppScaffold(child: MandiPricesScreen(), bgImageIndex: 1),
+        child: const AppScaffold(bgImageIndex: 1, child: MandiPricesScreen()),
       ),
     ),
     GoRoute(
       path: '/fertilizer-guide',
       pageBuilder: (context, state) => _buildPageWithTransition(
         child: const AppScaffold(
-          child: FertilizerGuideScreen(),
           bgImageIndex: 2,
+          child: FertilizerGuideScreen(),
         ),
       ),
     ),
